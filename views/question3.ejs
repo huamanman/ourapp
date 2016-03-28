@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='/stylesheets/mystyle.css' />
+
+<h1>Current Question: 3 / 10 </h1>
+</head>
+<body>
+<!--action直接到下一题><-->
+<div id="major">
+<form id="question3" action="/question4" method="get">
+<p class="questionBody">3.Who is the major actor of the movie "<%=result[0]%>": </p> 
+<div id="options" >
+<input class="option" name="Answer" type="radio" value="1" />A.<%=result[1]%><br>
+<input class="option" name="Answer" type="radio" value="2" />B.<%=result[2]%><br>
+<input class="option" name="Answer" type="radio" value="3" />C.<%=result[3]%><br>
+<input class="option" name="Answer" type="radio" value="4" />D.<%=result[4]%><br><br>
+</div>
+<button class="button black bigrounded" name="next" type="submit">next </button>
+</form><br><br>
+</div>
+
+</body>
+</html>

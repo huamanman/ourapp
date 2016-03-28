@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel='stylesheet' href='/stylesheets/mystyle.css' />
+
+<h1>Welcome, <%=user%> ! </h1>
+</head>
+<body>
+<div>
+<p>Your current level is:<%=level%></p>
+<p>Your last score is:<%=correctness%></p>
+           <form method="get" action="/question1">
+                <p>Pick a genre!</p>
+                <select name="genre">
+                    <option value="Drama">Drama</option>
+                    <option value="Action">Action</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Family">Family</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="War">War</option>
+                    <option value="Thriller">Thriller</option>
+                </select><br>
+                <p>Pick a difficulty!</p>
+                <select name="hardness">
+                    <option value="1" >Easy</option>
+                    <option value="2">Normal</option>
+                    <option value="3">Hard</option>                 
+                </select><br>
+                <button type="submit" class="button black bigrounded">Start the Quiz!</button><br><br>
+            </form> 
+</div>
+</body>
+</html>

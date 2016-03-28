@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='/stylesheets/mystyle.css' />
+
+<h1>Current Question: 7 / 10  </h1>
+</head>
+<body>
+<!--action直接到下一题><-->
+<div id="major">
+<form id="question7" action="/question8" method="get">
+<p class="questionBody">7. <%=result[0]%> didn't act in which of the following movie: </p> 
+<div id="options" >
+<input class="option" name="Answer" type="radio" value="1" />A.<%=result[1]%><br>
+<input class="option" name="Answer" type="radio" value="2" />B.<%=result[2]%><br>
+<input class="option" name="Answer" type="radio" value="3" />C.<%=result[3]%><br>
+<input class="option" name="Answer" type="radio" value="4" />D.<%=result[4]%><br><br>
+</div>
+<button class="button black bigrounded" name="next" type="submit">next </button>
+</form><br><br>
+</div>
+
+</body>
+</html>
